@@ -24,9 +24,8 @@ formulier.addEventListener("submit", function (event) {
     if (gevonden) {
         sessionStorage.setItem("ingelogd", naam); // onthou inlog
         sessionStorage.setItem("loginPagina", window.location.href);
-        window.location.href = "html_bestel.html";     
+        window.location.href = "html_bestel.html";
     } else {
         alert("Gebruikersnaam of wachtwoord is fout.");
     }
 });
- 

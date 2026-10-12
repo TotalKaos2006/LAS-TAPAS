@@ -12,4 +12,3 @@ uitlogKnop.addEventListener("click", function () {
     sessionStorage.removeItem("ingelogd"); 
     window.location.href = loginPagina;    
 });
- 

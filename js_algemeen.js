@@ -1,4 +1,3 @@
-// Accordion
 const accordion = document.querySelector(".accordion");
 
 const panel = document.querySelector(".accordion-content");
@@ -13,4 +12,3 @@ document.querySelectorAll(".accordion-title").forEach(button => {
         button.nextElementSibling.classList.toggle("show");
     });
 });
-
