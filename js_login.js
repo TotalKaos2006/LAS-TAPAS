@@ -1,7 +1,8 @@
 const gebruikers = [
     { naam: "kok", wachtwoord: "pizza123" },
-    { naam: "ober", wachtwoord: "tafel456" },
-    { naam: "manager", wachtwoord: "baas789" }
+    { naam: "ober", wachtwoord: "tafel123" },
+    { naam: "barman", wachtwoord: "drink123" },
+    { naam: "manager", wachtwoord: "baas123" }
 ];
  
 const formulier = document.getElementById("loginForm");
