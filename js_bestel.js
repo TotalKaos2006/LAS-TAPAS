@@ -1,4 +1,4 @@
-const standaardLoginPagina = "index.html";
+const standaardLoginPagina = "html_bestel.html";
  
 const loginPagina = sessionStorage.getItem("loginPagina") || standaardLoginPagina;
  

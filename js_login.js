@@ -7,7 +7,7 @@ const gebruikers = [
 const formulier = document.getElementById("loginForm");
  
 formulier.addEventListener("submit", function (event) {
-    event.preventDefault(); // pagina niet opnieuw laden
+    event.preventDefault(); 
  
     const naam = document.getElementById("username").value;
     const wachtwoord = document.getElementById("password").value;
@@ -21,9 +21,9 @@ formulier.addEventListener("submit", function (event) {
     }
  
     if (gevonden) {
-        sessionStorage.setItem("ingelogd", naam); // onthoud dat je bent ingelogd
-        sessionStorage.setItem("loginPagina", window.location.href); // onthoud deze loginpagina
-        window.location.href = "bestel.html";     // ga naar de bestelpagina
+        sessionStorage.setItem("ingelogd", naam); // onthou inlog
+        sessionStorage.setItem("loginPagina", window.location.href);
+        window.location.href = "html_bestel.html";     
     } else {
         alert("Gebruikersnaam of wachtwoord is fout.");
     }
