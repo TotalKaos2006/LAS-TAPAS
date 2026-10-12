@@ -1,4 +1,4 @@
-/* --- ALGEMEEN --- */
+
 body {
     margin: 0;
     padding: 0;
@@ -7,7 +7,6 @@ body {
     color: #4a4a4a;
 }
 
-/* --- HEADER --- */
 header {
     padding: 20px;
     text-align: center;
@@ -16,7 +15,6 @@ header {
     color: #d62828;
 }
 
-/* --- LOGINPANEEL --- */
 .accordion-container {
     display: flex;
     justify-content: center;
@@ -37,7 +35,6 @@ header {
     transform: scale(1.02);
 }
 
-/* --- FORMULIER --- */
 form label {
     font-weight: 600;
     color: #d62828;
@@ -59,7 +56,6 @@ form input:focus {
     background-color: #fff3e0;
 }
 
-/* --- ALGEMENE KNOPPEN --- */
 button {
     width: 100%;
     padding: 12px 22px;
@@ -76,7 +72,6 @@ button:hover {
     background-color: #f7800090;
 }
 
-/* --- TAPASKAARTEN --- */
 .tapas-item {
     width: 80%;
     padding: 18px;
@@ -91,11 +86,10 @@ button:hover {
     transform: scale(1.02);
 }
 
-/* --- MENU --- */
 .accordion {
-    width: 90%;
+    width: 60%;
     max-width: 800px;
-    margin: 40px auto;
+    margin: 20px auto;
 }
 
 .accordion,
@@ -103,19 +97,18 @@ button:hover {
     box-sizing: border-box;
 }
 
-/* --- CATEGORIEKNOPPEN --- */
 .accordion-title {
     display: flex;
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    padding: 18px 20px;
-    margin-top: 12px;
+    padding: 12px 16px;
+    margin-top: 10px;
     background-color: #a61b1b;
     color: #fff;
     border-radius: 8px;
     text-align: left;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: bold;
 }
 
@@ -137,7 +130,6 @@ button:hover {
     border-radius: 8px 8px 0 0;
 }
 
-/* --- UITKLAPBARE INHOUD --- */
 .accordion-content {
     display: none;
     padding: 16px;
@@ -152,7 +144,6 @@ button:hover {
     gap: 12px;
 }
 
-/* --- GERECHTKNOPPEN --- */
 .button-bestellijst {
     width: 100%;
     min-height: 60px;
@@ -187,7 +178,6 @@ button:hover {
     outline-offset: 3px;
 }
 
-/* --- TELEFOON --- */
 @media (max-width: 600px) {
     header {
         padding: 15px;
@@ -209,6 +199,10 @@ button:hover {
         padding: 14px;
         font-size: 16px;
         border-radius: 8px;
+    }
+
+    .accordion {
+        width: 90%;
     }
 
     .accordion-content.show {
