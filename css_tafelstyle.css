@@ -1,0 +1,130 @@
+body {
+    font-family: Poppins, sans-serif;
+    background-color: #FFF3E0;
+    margin: 0;
+}
+
+/* ---------- Overzicht ---------- */
+.Verdieping {
+    padding: 30px;
+    margin: 30px;
+}
+
+.Verdieping h2 {
+    text-align: center;
+}
+
+.TafelLayout {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.TafelBox {
+    text-align: center;
+}
+
+.TafelBox img {
+    width: 200px;
+    cursor: pointer;
+    transition: transform 0.15s;
+}
+
+.TafelBox img:hover {
+    transform: scale(1.06);
+}
+
+/* ---------- Popup ---------- */
+.PopupAchtergrond {
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    z-index: 100;
+}
+
+.PopupAchtergrond[hidden] {
+    display: none;
+}
+
+.TAFELBOX {
+    position: relative;
+    background-color: #FFE8CC;
+    border-radius: 15px;
+    border: 3px solid #D62828;
+    padding: 24px;
+    width: min(520px, 100%);
+    max-height: 90vh;
+    overflow-y: auto;
+    box-sizing: border-box;
+}
+
+.MainText {
+    color: #D62828;
+    font-weight: bold;
+    font-size: 34px;
+    margin: 0 0 20px;
+}
+
+.SluitKnop {
+    position: absolute;
+    top: 10px;
+    right: 14px;
+    background: none;
+    border: none;
+    font-size: 32px;
+    line-height: 1;
+    color: #D62828;
+    cursor: pointer;
+}
+
+.TafelFormulier {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.Veld {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    font-size: 17px;
+}
+
+.Veld span {
+    font-weight: bold;
+}
+
+.Veld input,
+.Veld select {
+    font: inherit;
+    padding: 8px 10px;
+    border-radius: 10px;
+    border: 2px solid #D62828;
+    background: #FFF3E0;
+}
+
+.Knoppen {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.Knop {
+    font: inherit;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 2px solid #D62828;
+    background: #D62828;
+    color: #fff;
+    cursor: pointer;
+}
+
+.KnopGrijs {
+    background: transparent;
+    color: #D62828;
+}

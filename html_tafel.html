@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Tafeloverzicht</title>
+  <link rel="stylesheet" href="css_tafelstyle.css">
+  <script defer src="js_tafel.js"></script>
+</head>
+
+<body>
+  <div class="Verdieping">
+    <h2>Begane grond</h2>
+    <div id="beganeGrond" class="TafelLayout"></div>
+  </div>
+
+  <div class="Verdieping">
+    <h2>Eerste verdieping</h2>
+    <div id="eersteVerdieping" class="TafelLayout"></div>
+  </div>
+
+  <!-- Popup: Tafel Informatie -->
+  <div id="popupAchtergrond" class="PopupAchtergrond" hidden>
+    <div class="TAFELBOX" role="dialog" aria-modal="true" aria-labelledby="popupTitel">
+      <button type="button" id="sluitKnop" class="SluitKnop" aria-label="Sluiten">&times;</button>
+      <h3 id="popupTitel" class="MainText">Tafel Informatie</h3>
+
+      <form id="tafelFormulier" class="TafelFormulier">
+        <div class="Veld">
+          <span>Nummer</span>
+          <strong id="veldNummer"></strong>
+        </div>
+
+        <label class="Veld">
+          <span>Naam Reservering</span>
+          <input type="text" id="veldNaam" placeholder="Naam">
+        </label>
+
+        <label class="Veld">
+          <span>Gekozen Arrangement</span>
+          <input type="text" id="veldArrangement" placeholder="Arrangement">
+        </label>
+
+        <label class="Veld">
+          <span>Status</span>
+          <select id="status">
+            <option value="bezet">Bezet</option>
+            <option value="gereserveerd">Gereserveerd</option>
+            <option value="vrij">Beschikbaar</option>
+          </select>
+        </label>
+
+        <div class="Veld">
+          <span>Plaats</span>
+          <strong id="veldPlaats"></strong>
+        </div>
+
+        <label class="Veld">
+          <span>Aantal Personen</span>
+          <input type="number" id="veldPersonen" min="0" max="4" value="0">
+        </label>
+
+        <div class="Knoppen">
+          <button type="button" id="annuleerKnop" class="Knop KnopGrijs">Annuleren</button>
+          <button type="submit" class="Knop">Opslaan</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</body>
+
+</html>
